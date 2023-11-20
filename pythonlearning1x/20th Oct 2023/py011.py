@@ -1,12 +1,11 @@
 # # Palindrome
-#
-# OriginalStr = input("Enter String \n")
-# newStr=str(OriginalStr[-1::-1])
-# if OriginalStr == newStr:
-#     print(OriginalStr, "is a palindrome")
-# else:
-#     print(OriginalStr, "is not a palindrome")
-#
+
+OriginalStr = input("Enter String \n")
+newStr=str(OriginalStr[-1::-1])
+if OriginalStr == newStr:
+    print(OriginalStr, "is a palindrome")
+else:
+    print(OriginalStr, "is not a palindrome")
 
 # Create a function that calculates the sum of the digits of a positive integer.
 

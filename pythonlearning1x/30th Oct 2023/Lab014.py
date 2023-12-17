@@ -1,3 +1,5 @@
+import json
+
 # Intersection and union of two sets.
 
 # tup1=(6,-2,3,4,40)
@@ -32,9 +34,47 @@
 # set.union(Remove_Dup)
 # print(Remove_Dup)
 
-#Remove a key-value pair from the dictionary.
+# Remove a key-value pair from the dictionary.
+# my_dict = {"Batman": 1234, "Age": 123, "Phone": 979867857}
+# temp =(my_dict.pop("Phone"))
+# print(temp)
 
-my_dict = dict(Batman=1234,Age=123,Phone= 979867857)
-print(my_dict.pop('Phone'))
+# Convert to Dict JSON Response and Print and Booking Id AND checkin and Checkout Data
 
+Travel_dictionary = {
 
+    "bookingid": 2384,
+
+    "booking": {
+
+        "firstname": "PRAMOD",
+
+        "lastname": "Dutta",
+
+        "totalprice": 432,
+
+        "depositpaid": False,
+
+        "bookingdates": {
+
+            "checkin": "2022-01-01",
+
+            "checkout": "2022-01-01"
+
+        },
+
+        "additionalneeds": "Lunch"
+
+    }
+
+}
+
+Travel_json = json.dumps(Travel_dictionary, indent=3)
+
+val1 = Travel_dictionary["bookingid"]
+val2 = Travel_dictionary["booking"].get("bookingdates")
+val3 = Travel_dictionary["booking"]["bookingdates"].get("checkin")
+
+print(val1)
+print(val2)
+print(val3)

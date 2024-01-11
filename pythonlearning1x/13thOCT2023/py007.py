@@ -1,13 +1,9 @@
 # # Task 1
 #  = is a Assignment operator
 #  == is used to compare two values and return result in boolean.
-#
-#
 # ** operator is the exponential operator which is to riase power of a number
 # Example : 2**3 which means 2^3
-#
 # ^ is ternary Operator reads two integer numbers(in binary format) and gives result in Binary format.
-
 # Task 2
 
 Radius = float(input("Enter Radius of Circle \n"))
